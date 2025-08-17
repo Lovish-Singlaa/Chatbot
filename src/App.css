@@ -1,0 +1,133 @@
+/* Custom animations */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Custom scrollbar styling */
+.messages-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.messages-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.chat-list-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chat-list-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-list-content::-webkit-scrollbar-thumb {
+  background: #e1e5e9;
+  border-radius: 2px;
+}
+
+.chat-list-content::-webkit-scrollbar-thumb:hover {
+  background: #c1c5c9;
+}
+
+/* Markdown styling for bot messages */
+.bot-message .prose {
+  color: inherit;
+}
+
+.bot-message .prose p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.bot-message .prose h1,
+.bot-message .prose h2,
+.bot-message .prose h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.bot-message .prose ul,
+.bot-message .prose ol {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+.bot-message .prose li {
+  margin: 0.25rem 0;
+}
+
+.bot-message .prose code {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.bot-message .prose pre {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+
+.bot-message .prose blockquote {
+  border-left: 3px solid rgba(0, 0, 0, 0.2);
+  padding-left: 0.75rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.bot-message .prose a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.bot-message .prose a:hover {
+  color: #1d4ed8;
+}
+
+.bot-message .prose table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.bot-message .prose th,
+.bot-message .prose td {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.25rem 0.5rem;
+  text-align: left;
+}
+
+.bot-message .prose th {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+/* User message styling */
+.user-message .whitespace-pre-wrap {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
