@@ -59,6 +59,8 @@ const ChatApp = () => {
 
   const handleSignOut = async () => {
     await signOut();
+    await apolloClient.clearStore();
+    window.location.reload();
   };
 
   return (
